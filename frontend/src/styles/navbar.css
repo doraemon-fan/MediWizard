@@ -1,0 +1,102 @@
+/* 🌟 Navbar Container */
+.navbar {
+    background: linear-gradient(to right, #1a1a2e, #0f172a);
+    padding: 10px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* 🌟 Nav Container */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* 🌟 Logo */
+  .nav-logo {
+    font-size: 1.8rem;
+    color: #facc15;
+    text-decoration: none;
+    font-family: "Uncial Antiqua", cursive;
+  }
+  
+  .nav-logo span {
+    color: #fbbf24;
+    text-shadow: 0 0 8px #facc15, 0 0 12px #fbbf24;
+  }
+  
+  /* 🌟 Menu Items */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* 🌟 Menu Links */
+  .nav-link {
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+  }
+  
+  /* 🌟 Hover Effects */
+  .nav-link:hover {
+    background: rgba(250, 204, 21, 0.1);
+    box-shadow: 0 0 15px #facc15;
+    color: #fbbf24;
+  }
+  
+  /* 🌟 Active Link */
+  .active .nav-link {
+    background: rgba(250, 204, 21, 0.2);
+    border: 1px solid #facc15;
+    box-shadow: 0 0 10px #fbbf24;
+    color: #facc15;
+  }
+  
+  /* 🌟 Mobile Menu Icon */
+  .menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #facc15;
+  }
+  
+  /* 🌟 Mobile Menu */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      background: #1a1a2e;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      border-top: 2px solid #facc15;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    .nav-item {
+      padding: 12px 0;
+      text-align: center;
+    }
+  
+    .nav-link {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  

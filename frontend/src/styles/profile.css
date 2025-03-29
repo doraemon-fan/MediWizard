@@ -1,0 +1,102 @@
+/* 🌟 Profile Container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1a1a2e);
+}
+
+/* 🌟 Glowing Profile Card */
+.profile-card {
+  background: rgba(31, 41, 55, 0.95);
+  padding: 24px;
+  border-radius: 16px;
+  width: 380px;
+  text-align: center;
+  border: 1px solid #facc15;
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.5), 0 0 60px rgba(250, 204, 21, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ✨ Hover Animation for Card */
+.profile-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 30px rgba(250, 204, 21, 0.7), 0 0 70px rgba(250, 204, 21, 0.2);
+}
+
+/* 🌟 Profile Title */
+.profile-title {
+  font-size: 2rem;
+  color: #facc15;
+  text-shadow: 0 0 12px #facc15, 0 0 18px #fbbf24;
+  margin-bottom: 16px;
+}
+
+/* 🌟 Profile Text */
+.profile-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #e5e7eb;
+  transition: color 0.3s;
+}
+
+/* ✨ Highlight on Hover */
+.profile-text:hover {
+  color: #facc15;
+  text-shadow: 0 0 8px #facc15;
+}
+
+/* 🌟 Input Summary Section */
+.input-summary {
+  margin-top: 16px;
+  text-align: left;
+  background: rgba(45, 55, 72, 0.95);
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #facc15;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.2);
+}
+
+/* 🌟 Input Summary Text */
+.input-summary h3 {
+  color: #facc15;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.input-summary p {
+  font-size: 1rem;
+  margin: 4px 0;
+  color: #e5e7eb;
+  transition: color 0.3s;
+}
+
+/* 🌟 Highlight Input Data on Hover */
+.input-summary p:hover {
+  color: #fbbf24;
+}
+
+/* 🌟 Prediction String */
+.prediction-string {
+  margin-top: 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f6e05e;
+  text-shadow: 0 0 8px #f6e05e;
+}
+
+/* 🌟 Health Condition */
+.profile-condition {
+  margin-top: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #34d399;
+  text-shadow: 0 0 8px #34d399;
+}
+
+/* ✨ Conditional Styling for Critical Cases */
+.profile-condition.critical {
+  color: #ef4444;
+  text-shadow: 0 0 10px #ef4444, 0 0 20px #dc2626;
+}

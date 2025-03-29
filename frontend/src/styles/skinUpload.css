@@ -1,0 +1,142 @@
+/* 🌟 Main Container */
+.skin-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background: #1a1a2e;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+}
+
+/* 🌟 Title */
+.upload-title {
+  font-size: 2rem;
+  color: #facc15;
+  margin-bottom: 20px;
+}
+
+/* 🌟 Upload Box */
+.upload-box {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px dashed #facc15;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 300px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-box:hover {
+  background-color: #374151;
+}
+
+/* 🌟 Image Preview */
+.image-preview {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #facc15;
+}
+
+/* 🌟 Scanner Overlay */
+.scanner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 41, 55, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* 🔍 Scanner Line Animation */
+.scanner-line {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #facc15,
+    #fbbf24,
+    #facc15
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: scan 3s linear infinite alternate;
+}
+
+@keyframes scan {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* 🌟 Prediction Box */
+.prediction-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #1f2937;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.4);
+}
+
+/* ✅ Healthy Prediction Style */
+.prediction-box.healthy {
+  border: 2px solid #34d399;
+  color: #34d399;
+}
+
+/* ⚠️ Alert for Disease Detected */
+.prediction-box.alert {
+  border: 2px solid #f87171;
+  color: #f87171;
+}
+
+/* 🔎 Analyzing Animation */
+.analyzing-animation {
+  margin-top: 20px;
+  width: 300px;
+  height: 50px;
+  background: #1f2937;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.5);
+}
+
+/* ✨ Pulse Effect for Analyzing Text */
+.analyzing-animation p {
+  color: #facc15;
+  font-size: 1.2rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

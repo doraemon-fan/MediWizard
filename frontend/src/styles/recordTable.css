@@ -1,0 +1,29 @@
+/* 🌟 Record Table Container */
+.record-table-container {
+    margin-top: 20px;
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.5);
+  }
+  
+  /* 🌟 Table */
+  .record-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #facc15;
+  }
+  
+  /* 🌟 Table Headers & Cells */
+  .record-table th,
+  .record-table td {
+    padding: 10px;
+    border-bottom: 1px solid #4b5563;
+    text-align: center;
+  }
+  
+  /* 🌟 Table Header */
+  .record-table th {
+    background: #111827;
+  }
+  
